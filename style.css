@@ -19,7 +19,7 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.topo p {
+.topo h1 {
     width: 248px;
     height: 44px;
     top: 8px;
@@ -41,9 +41,9 @@ body{
     position: absolute;
     width: 226px;
     height: 17px;
-    margin-top: 1px;
+    margin-top: 4px;
     margin-left: 21px;
-    top: 57px;
+    top: 60px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -80,7 +80,7 @@ body{
     background: #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
-    border: 4px solid #32b72f;
+    border: 4px solid white;
 
 }
 
@@ -120,7 +120,7 @@ body{
     width: 147px;
     height: 39px;
     left: 14px;
-    top: 140px;
+    top: 150px;
     display: flex;
     text-align: left;
 
@@ -138,7 +138,7 @@ body{
     width: 66px;
     height: 19px;
     left: 14px;
-    top: 184px;
+    top: 188px;
     display: flex;
     align-items: flex-start;
 
@@ -151,13 +151,13 @@ body{
     color: #000000;
 }
 
-.opcaoprato1 ion-icon {
+.check {
     position: absolute;
-    width: 20px;
+    width: 15px;
     left: 140px;
     right: 9.38px;
-    top: 190px;
-
+    top: 182px;
+    display:none;
     color: #32b72f;
 }
 
@@ -171,6 +171,7 @@ body{
     background: #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    border: 4px solid white;
 }
 
 .opcaoprato2 img {
@@ -209,7 +210,7 @@ body{
     width: 147px;
     height: 39px;
     left: 14px;
-    top: 140px;
+    top: 150px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -225,7 +226,7 @@ body{
     width: 66px;
     height: 19px;
     left: 14px;
-    top: 184px;
+    top: 188px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -245,6 +246,7 @@ body{
     background: #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    border: 4px solid white;
 }
 
 .opcaoprato3 img {
@@ -282,7 +284,7 @@ body{
     width: 147px;
     height: 39px;
     left: 14px;
-    top: 140px;
+    top: 150px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -299,7 +301,7 @@ body{
     width: 66px;
     height: 19px;
     left: 14px;
-    top: 184px;
+    top: 188px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -337,6 +339,7 @@ body{
     background: #ffffff;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    border: 4px solid white;
   }
   
   .opcaobebida1 img {
@@ -410,6 +413,7 @@ body{
     background: #ffffff;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    border: 4px solid white;
   }
   
   .opcaobebida2 img {
@@ -483,6 +487,7 @@ body{
     background: #ffffff;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    border: 4px solid white;
   }
   
   .opcaobebida3 img {
@@ -573,6 +578,7 @@ body{
     background: #ffffff;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    border: 4px solid white;
   }
   
   .opcaosobremesa1 img {
@@ -643,6 +649,7 @@ body{
     background: #ffffff;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    border: 4px solid white;
   }
   
   .opcaosobremesa2 img {
@@ -713,6 +720,7 @@ body{
     background: #ffffff;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    border: 4px solid white;
   }
   
   .opcaosobremesa3 img {
@@ -785,7 +793,7 @@ body{
   }
   .caixapedido button {
     position: absolute;
-    width: 500px;
+    width: 100%;
     height: 61px;
     left: 25px;
     bottom: 16px;
@@ -812,4 +820,3 @@ body{
   
     color: #ffffff;
   }
-  
