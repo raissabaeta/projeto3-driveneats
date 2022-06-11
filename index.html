@@ -1,110 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Driven Eats</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DrivenEats</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
+  <header>
     <div class="topo">
-        <h1>DrivenEats</h1>
-        <h3>Sua comida em 6 minutos</h3>
+      <h1>DrivenEats</h1>
+      <p>Sua comida em 6 minutos</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="titulo">
+      <h2>Primeiro, seu prato</h2>
     </div>
 
-    <div class="menu">
-        <p class="titulo1">Primeiro seu prato</p>
-       
-           <div id="Frango" class="opcaoprato1" onclick="escolherFrango()">
-               <img src="images/frango.png" alt="prato de frango com batata e salada yin yang">
-               <p>Frango Yin Yang Pequeno</p>
-               <h3>Um pouco de batata, um pouco de salada</h3>
-               <h4>R$ 14,90</h4>
-               <ion-icon id="checkFrango" name="checkmark-circle" class="check"></ion-icon>
-            </div>
-
-        <div id="Frango Medio" class="opcaoprato2" onclick="escolherFrangoMedio()">
-            <img src="images/frango.png" alt="prato de frango com batata e salada yin yang">
-            <p>Frango Yin Yang Médio</p>
-            <h3>Um pouco de batata, um pouco de salada</h3>
-            <h4>R$ 19,90</h4>
+    <div class="container-produto">
+      <div class="produto">
+        <div id="Frango" class="card-opcao" onclick="escolherFrango()">
+          <img src="images/frango.png" alt="prato de frango com batata e salada" />
+          <h3>Frango Yin Yang Pequeno</h3>
+          <h4>Um pouco de batata, um pouco de salada</h4>
+          <div class="check-container">
+            <h5>R$ 14,90</h5>
+            <ion-icon id="checkFrango" name="checkmark-circle" class="check"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div class="produto">
+        <div id="Frango Medio" class="card-opcao" onclick="escolherFrangoMedio()">
+          <img src="images/frango.png" alt="prato de frango com batata e salada" />
+          <h3>Frango Yin Yang Médio</h3>
+          <h4>Um pouco de batata, um pouco de salada</h4>
+          <div class="check-container">
+            <h5>R$ 19,90</h5>
             <ion-icon id="checkFrangoMedio" name="checkmark-circle" class="check"></ion-icon>
+          </div>
         </div>
-        <div id="Frango Grande" class="opcaoprato3" onclick="escolherFrangoGrande()">
-            <img src="images/frango.png" alt="prato de frango com batata e salada yin yang">
-            <p>Frango Yin Yang Grande</p>
-            <h3>Um pouco de batata, um pouco de salada</h3>
-            <h4 id="Valor Frango Grande">R$ 34,90</h4>
+      </div>
+      <div class="produto">
+        <div id="Frango Grande" class="card-opcao" onclick="escolherFrangoGrande()">
+          <img src="images/frango.png" alt="prato de frango com batata e salada" />
+          <h3>Frango Yin Yang Grande</h3>
+          <h4>Um pouco de batata, um pouco de salada</h4>
+          <div class="check-container">
+            <h5>R$ 34,90</h5>
             <ion-icon id="checkFrangoGrande" name="checkmark-circle" class="check"></ion-icon>
+          </div>
         </div>
-        <p class="titulo2">Agora, sua bebida</p>
-        <div id="Coca" class="opcaobebida1" onclick="escolherCoca()">
-            <img src="images/coquinha.png" alt="imagem de refrigerantes" />
-            <p>Coquinha gelada</p>
-            <h3>Lata 350ml</h3>
-            <h4>R$ 4,90</h4>
+      </div>
+    </div>
+
+    <div class="titulo">
+      <h2>Agora, sua bebida</h2>
+    </div>
+
+    <div class="container-produto">
+      <div class="produto">
+        <div id="Coca Normal" class="card-opcao" onclick="escolherCocaNormal()">
+          <img src="images/coquinha.png" alt="imagem de coca-cola em lata" />
+          <h3>Coquinha gelada Normal</h3>
+          <h4>Lata 350ml</h4>
+          <div class="check-container">
+            <h5>R$ 4,90</h5>
             <ion-icon id="checkCoca" name="checkmark-circle" class="check"></ion-icon>
           </div>
-          <div id="Coca Mini" class="opcaobebida2" onclick="escolherCocaMini()">
-            <img src="images/coquinha.png" alt="imagem de refrigerantes" />
-            <p>Coquinha gelada</p>
-            <h3>Mini Lata</h3>
-            <h4>R$ 3,90</h4>
+        </div>
+      </div>
+      <div class="produto">
+        <div id="Coca Mini" class="card-opcao" onclick="escolherCocaMini()">
+          <img src="images/coquinha.png" alt="imagem de coca-cola em lata" />
+          <h3>Coquinha gelada Mini</h3>
+          <h4>Lata 255ml</h4>
+          <div class="check-container">
+            <h5>R$ 3,90</h5>
             <ion-icon id="checkCocaMini" name="checkmark-circle" class="check"></ion-icon>
           </div>
-          <div id="Coca Zero" class="opcaobebida3" onclick="escolherCocaZero()">
-            <img src="images/coquinha.png" alt="imagem de refrigerantes" />
-            <p>Coquinha gelada Zero</p>
-            <h3>Lata 350ml</h3>
-            <h4>R$ 4,90</h4>
+        </div>
+      </div>
+      <div class="produto">
+        <div id="Coca Zero" class="card-opcao" onclick="escolherCocaZero()">
+          <img src="images/coquinha.png" alt="imagem de coca-cola em lata" />
+          <h3>Coquinha gelada Zero</h3>
+          <h4>Lata 350ml</h4>
+          <div class="check-container">
+            <h5>R$ 4,90</h5>
             <ion-icon id="checkCocaZero" name="checkmark-circle" class="check"></ion-icon>
           </div>
-          <p class="titulo3">Por fim, sua sobremesa</p>
-          <div id="Pudim Pequeno" class="opcaosobremesa1" onclick="escolherPudimPequeno()">
-            <img src="images/pudim.png" alt="foto de um pudim pequeno" />
-            <p>Pudim Pequeno</p>
-            <h3>Apenas pudim</h3>
-            <h4>R$ 7,90</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="titulo">
+      <h2>Por fim, sua sobremesa</h2>
+    </div>
+
+    <div class="container-produto">
+      <div class="produto">
+        <div id="Pudim Pequeno" class="card-opcao" onclick="escolherPudimPequeno()">
+          <img src="images/pudim.png" alt="imagem de um pudim" />
+          <h3>Pudim Pequeno</h3>
+          <h4>Apenas pudim</h4>
+          <div class="check-container">
+            <h5>R$ 7,90</h5>
             <ion-icon id="checkPudim" name="checkmark-circle" class="check"></ion-icon>
           </div>
-          <div id="Pudim Medio" class="opcaosobremesa2" onclick="escolherPudimMedio()">
-            <img src="images/pudim.png" alt="foto de um pudim pequeno" />
-            <p>Pudim Médio</p>
-            <h3>Apenas pudim</h3>
-            <h4>R$ 9,90</h4>
+        </div>
+      </div>
+      <div class="produto">
+        <div id="Pudim Medio" class="card-opcao" onclick="escolherPudimMedio()">
+          <img src="images/pudim.png" alt="imagem de um pudim" />
+          <h3>Pudim Médio</h3>
+          <h4>Apenas pudim</h4>
+          <div class="check-container">
+            <h5>R$ 9,90</h5>
             <ion-icon id="checkPudimMedio" name="checkmark-circle" class="check"></ion-icon>
           </div>
-          <div id="Pudim Grande" class="opcaosobremesa3" onclick="escolherPudimGrande()">
-            <img src="images/pudim.png" alt="foto de um pudim pequeno" />
-            <p>Pudim Grande</p>
-            <h3>Apenas pudim</h3>
-            <h4>R$ 12,90</h4>
+        </div>
+      </div>
+      <div class="produto">
+        <div id="Pudim Grande" class="card-opcao" onclick="escolherPudimGrande()">
+          <img src="images/pudim.png" alt="imagem de um pudim" />
+          <h3>Pudim Grande</h3>
+          <h4>Apenas pudim</h4>
+          <div class="check-container">
+            <h5>R$ 12,90</h5>
             <ion-icon id="checkPudimGrande" name="checkmark-circle" class="check"></ion-icon>
           </div>
         </div>
-        <footer>
-            <div class="caixapedido">
-              <button id="fecharPedido" onclick="finalizarPedido()">
-                <p>
-                  Selecione os 3 itens <br />
-                  para fechar o pedido
-                </p>
-              </button>
-            </div>
-          </footer>
-
-  
-</div>
-
-</div>
+      </div>
+    </div>
     
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src="script.js"></script>
-    
+    <div class="separador"></div>
+
+    <footer>
+      <div class="caixapedido">
+        <button id="fecharPedido" onclick="finalizarPedido()">
+          <span>
+            Selecione os 3 itens <br />
+            para fechar o pedido
+          </span>
+        </button>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
